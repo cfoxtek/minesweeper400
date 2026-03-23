@@ -1,0 +1,70 @@
+     A* MINESD - Minesweeper Display File
+     A* CFOX1 library - by cfox
+     A                                      DSPSIZ(24 80 *DS3)
+     A                                      CA03(03 'Exit')
+     A                                      CA05(05 'New Game')
+     A          R GAMESCREEN
+     A                                  1  2'MINES/400'
+     A                                      COLOR(GRN)
+     A                                  1 14'Reveal all safe cells|'
+     A                                  1 46'F3=Exit  F5=New Game'
+     A            ROW01         40A  O  2  1
+     A                                      COLOR(GRN)
+     A            ROW02         40A  O  3  1
+     A                                      COLOR(GRN)
+     A            ROW03         40A  O  4  1
+     A                                      COLOR(GRN)
+     A            ROW04         40A  O  5  1
+     A                                      COLOR(GRN)
+     A            ROW05         40A  O  6  1
+     A                                      COLOR(GRN)
+     A            ROW06         40A  O  7  1
+     A                                      COLOR(GRN)
+     A            ROW07         40A  O  8  1
+     A                                      COLOR(GRN)
+     A            ROW08         40A  O  9  1
+     A                                      COLOR(GRN)
+     A            ROW09         40A  O 10  1
+     A                                      COLOR(GRN)
+     A            ROW10         40A  O 11  1
+     A                                      COLOR(GRN)
+     A            ROW11         40A  O 12  1
+     A                                      COLOR(GRN)
+     A            ROW12         40A  O 13  1
+     A                                      COLOR(GRN)
+     A            ROW13         40A  O 14  1
+     A                                      COLOR(GRN)
+     A            ROW14         40A  O 15  1
+     A                                      COLOR(GRN)
+     A            ROW15         40A  O 16  1
+     A                                      COLOR(GRN)
+     A            ROW16         40A  O 17  1
+     A                                      COLOR(GRN)
+     A            ROW17         40A  O 18  1
+     A                                      COLOR(GRN)
+     A            ROW18         40A  O 19  1
+     A                                      COLOR(GRN)
+     A            ROW19         40A  O 20  1
+     A                                      COLOR(GRN)
+     A            ROW20         40A  O 21  1
+     A                                      COLOR(GRN)
+     A                                  2 43'LEGEND'
+     A                                      COLOR(WHT)
+     A                                  3 43'. = unrevealed'
+     A                                  4 43'- = clear  0 nearby'
+     A                                  5 43'1-8 = mines nearby'
+     A                                  6 43'O = cursor'
+     A                                  7 43'* = mine  BOOM'
+     A                                 10 43'KEYS'
+     A                                      COLOR(WHT)
+     A                                 11 43'A=Left  D=Right'
+     A                                 12 43'W=Up   S=Down'
+     A                                 13 43'Enter=Reveal cell'
+     A            STATLN        42A  O 22  1
+     A                                      COLOR(WHT)
+     A            MESSAGE       79A  O 23  1
+     A                                      COLOR(RED)
+     A                                 24  2'Key>'
+     A            KEYIN          1A  B 24  7
+     A                                      CHECK(LC ER)
+     A                                      DSPATR(ND)

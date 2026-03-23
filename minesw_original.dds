@@ -1,0 +1,55 @@
+     A* MINESW - Minesweeper Display File
+     A* GAMES400 library - by Ales Linda (linda@its.cz)
+     A* Original compilation date: 1999-05-16
+     A*
+     A* NOTE: Original DDS source was not preserved in GAMES400.
+     A*       This file was reconstructed from the compiled object
+     A*       using DSPFFD. Field names FLD001-FLD024 are generated
+     A*       names from the compiler; original names are unknown.
+     A*       Constant text for MINESW02 (boss key screen) is unknown.
+     A*
+     A                                      DSPSIZ(24 80 *DS3)
+     A                                      CA03(03 'CMD3')
+     A                                      CA05(05 'CMD5')
+     A                                      CA10(10 'CMD10')
+     A                                      CA11(11 'CMD11')
+     A                                      CA12(12 'CMD12')
+     A*
+     A* MINESW01 - Main game screen
+     A*   VOLBA    = player input key (1/2/3/5 to move, space=boss key)
+     A*   FLD023   = mine count indicator (top right)
+     A*   FLD001-021 = 21 rows of 79-char game board (rows 2-22)
+     A*   FLD024   = message line (row 24)
+     A*
+     A          R MINESW01
+     A            VOLBA          1A  B  1  3
+     A            FLD023         1S  O  1 77
+     A            FLD001        79A  O  2  2
+     A            FLD002        79A  O  3  2
+     A            FLD003        79A  O  4  2
+     A            FLD004        79A  O  5  2
+     A            FLD005        79A  O  6  2
+     A            FLD006        79A  O  7  2
+     A            FLD007        79A  O  8  2
+     A            FLD008        79A  O  9  2
+     A            FLD009        79A  O 10  2
+     A            FLD010        79A  O 11  2
+     A            FLD011        79A  O 12  2
+     A            FLD012        79A  O 13  2
+     A            FLD013        79A  O 14  2
+     A            FLD014        79A  O 15  2
+     A            FLD015        79A  O 16  2
+     A            FLD016        79A  O 17  2
+     A            FLD017        79A  O 18  2
+     A            FLD018        79A  O 19  2
+     A            FLD019        79A  O 20  2
+     A            FLD020        79A  O 21  2
+     A            FLD021        79A  O 22  2
+     A            FLD024        75A  O 24  2
+     A*
+     A* MINESW02 - Boss key screen (fake WRKSPLF replica)
+     A*   Press Space or Enter to activate; F3/F12 to return to game
+     A*   Constant text unknown (not preserved in source)
+     A*
+     A          R MINESW02
+     A            VOLBA          1A  B  9  3
