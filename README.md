@@ -13,6 +13,14 @@ Four versions of a Minesweeper game for IBM i (AS/400), all running natively on 
 | `mines2d.cbl` | IBM Cobol/400 (OPM) | `minesd.dds` → `MINESD` | Port of `mines2c.cbl` to OPM Cobol/400 style, compiled with `CRTCBLPGM`. |
 | `minesd.dds` | DDS | — | Display file shared by `mines2.rpgle`, `mines2c.cbl`, and `mines2d.cbl`. Must be compiled first. |
 
+## License
+
+The rewrites (`mines2.rpgle`, `mines2c.cbl`, `mines2d.cbl`, `minesd.dds`) are original work by cfox and are free to use.
+
+The original game (`mines_original.cbl`, `minesw_original.dds`) was written by Ales Linda and distributed as part of the NEWS/400 Games Pack. No license was included with the source. It is reproduced here for historical and educational purposes with full attribution. If you are Ales Linda and have concerns, please open an issue.
+
+`minesw_original.dds` was reconstructed from the compiled object using `DSPFFD` — the original DDS source was not preserved.
+
 ## The Original (1999)
 
 Written by Ales Linda (`linda@its.cz`) for the NEWS/400 Games Pack. Compiled May 16, 1999 by user `CHUCK` on system `S1038805`. The object sat in `GAMES400/MINES` on pub400.com for 26 years and has been played 807 days.
